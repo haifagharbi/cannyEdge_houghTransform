@@ -11,5 +11,8 @@ After canny edge (for finding edges on the road)
 
 After hough transform (to get parallel lines on the road)
 
-![Image of Canny_edge](https://github.com/souravEMBS/cannyEdge_houghTransform/blob/master/hough_tranformed_image_detect_parallel_lines.png)
+![Image of Hough_transform](https://github.com/souravEMBS/cannyEdge_houghTransform/blob/master/hough_tranformed_image_detect_parallel_lines.png)
+
+Image after calibrating the Hough line parameters
+![Image after calibration](https://github.com/souravEMBS/cannyEdge_houghTransform/blob/master/finalTransformAfterCalibration.png
 
