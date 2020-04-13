@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
-image = mpimg.imread("C:\\Users\\Sourav\\Desktop\\selfDrivingCarProj\\cannyEdgeDetection\\exit-ramp.jpg")
+image = mpimg.imread("C:\\Users\\Sourav\\Desktop\\selfDrivingCarProj\\cannyEdge_houghTransform\\exit-ramp.jpg")
 plt.imshow(image)
 
 
@@ -14,7 +14,6 @@ kernel_size = 3
 blur_gray = cv2.GaussianBlur(gray,(kernel_size, kernel_size), 0)
 
 # Define parameters for Canny and run it
-# NOTE: if you try running this code you might want to change these!
 low_threshold = 70
 high_threshold = 100
 edges = cv2.Canny(blur_gray, low_threshold, high_threshold)
@@ -37,9 +36,9 @@ import numpy as np
 # Make a blank the same size as our image to draw on
 rho = 1
 theta = np.pi/180
-threshold = 1
-min_line_length = 10
-max_line_gap = 1
+threshold = 2
+min_line_length = 235
+max_line_gap = 20
 line_image = np.copy(image)*0 #creating a blank to draw lines on
 
 # Run Hough on edge detected image
